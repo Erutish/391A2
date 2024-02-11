@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
+*{
+    scroll-behavior:smooth
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Montserrat,sans-serif;
+    color:#0d1b2a;
+    background-color: #FDF7E4;
+    text-align: center;
+    color:#fff;
+    font-family: "Sofia", sans-serif;
+
+
+}
+
+button{
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+    font-size: 16px;
+    color: #0d1b2a;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    background-color: #7E6363;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+}
+
+/* a{
+    text-decoration:none;
+    color:#2d3436
+}
+a:hover{
+    text-decoration:none;
+    color:#2d3436
+}
+a:focus{
+    text-decoration:none;
+    color:#2d3436
+}
+a:active{
+    text-decoration:none;
+    color:#0a0b0b
+} */
+h1{
+    font-family: "Sofia", sans-serif;
+}
+input{
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;;
+    color: #0d1b2a;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    background-color: #FAEED1;
+    outline: none;
+    transition: .4s;
+}
+
+.header{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:right top;
+    height:100vh;
+    margin:10px
+}
+.wrapper{
+    width:90%;
+    margin:0 auto;
+    
+}
+nav{
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:20px;
+    border-radius: 8px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+   
+}
+.navbar ul{
+    display:flex;
+    justify-content:space-evenly;
+    width:250px;
+    gap:10 px;
+    position: sticky;
+    
+    top:0;
+    z-index: 1000;
+}
+.navbar ul li{
+    list-style:none;
+
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:#BBAB8C;
+    padding: 10px;
+    border-radius: 6px;
+    /* word-spacing: 15px; */
+    font-size:2.25rem;
+    letter-spacing:1px;
+    transition: background-color .3s ease;
+}
+.navbar ul li a:hover {
+    background-color: #f7e4d1;
+    color:#3F0713;
+}
+
+.sectiontitle{
+    text-align:center;
+    cursor:default
+}
+
+.sectiontitle h1{
+    font-size:5.5rem;
+    letter-spacing:.75rem;
+    font-weight:900;
+    font-family: "Sofia", sans-serif;
+    text-transform: uppercase;
+    color:#6B240C;
+    opacity:.25;
+    z-index: 0;
+    padding-top: 90px;
+}
+.spacing{
+    display:block;
+    clear:both;
+    height:5rem
+}
+.section_container{
+    display:block;
+    clear:both;
+    height:relative;
+    background-color:#BBAB8C;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+}
+
+
+.section_container button:hover{
+    
+    cursor:default;
+    background-color:#A87C7C;
+}
+
+
+
+/* Quotes */
+
+.quote{
+    display:block;
+    clear:both;
+    background-color:#3F0713;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+    border-color: #884A39;
+    border-style: solid;
+    height: auto;
+}
+#quote_text{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size:3rem;
+    line-height:1.375;
+    font-family: 'Poor Story', system-ui;
+    font-style: italic;
+    color:#fff;
+    text-align:center;
+    margin-bottom:0;
+    margin-top:.5rem
+}
+#quote_text:hover{
+    opacity:.5;
+    cursor:default
+}
+#quote_author{
+    font-size:1.5rem;
+    font-weight:900;
+    font-family: 'Poor Story', system-ui;
+    text-align:center;
+    opacity:.5;
+    margin-bottom:0;
+    margin-top:1rem;
+    cursor:default;
+    padding-bottom:3rem;
+}
+.quotesvg{
+    padding-top:3%;
+    text-align:center
+}
+.quotesvg i{
+    font-size:5rem;
+    color:#fff;
+    opacity:.25;
+    margin-top:0;
+    margin-bottom:0;
+    text-align:center
+}
+.quotebutton{
+    text-align:center;
+    margin-top:1rem;
+    margin-bottom:3rem;
+    cursor:pointer
+}
+#red-button{
+    border-color: #A94438;
+    background-color: #D24545;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#red-button i{
+    color: #D24545;
+}
+#green-button{
+    border-color: #43766C;
+    background-color: #0a3e28;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#green-button i{
+    color: #0a3e28;
+}
+#violate-button{
+    border-color: #003566;
+    background-color: #6745cf;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#violate-button i{
+    color: #6745cf;
+}
+#pink-button{
+    border-color: #47126b;
+    background-color: #ea9ab2;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#pink-button i{
+    color: #ea9ab2;
+}
+
+/* heroconvertor */
+
+.hero_converter{
+    display:block;
+    clear:both;
+    height:relative;
+    padding: 5%;
+    border-radius: 25px;
+    text-align: center;
+}
+.hero_converter_text{
+    font-size:1.7rem;
+    font-family: 'Poor Story', system-ui;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom:0;
+    margin-top:.5rem
+}
+.hero_converter_text:hover{
+    opacity:.5;
+    cursor:default
+}
+#converter_unit{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    background-color: #7E6363;
+    outline: none;
+    transition: .4s;
+}
+#converter_button{
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+    font-weight: bold;
+    color: #0d1b2a;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    background-color: #7E6363;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+}
+#converter_button:hover{
+    cursor:default;
+    background-color:#A87C7C ;
+
+}
+#converter_result{
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+    color: #0d1b2a;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    outline: none;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+
+/* .calculator{
+    display:block;
+    clear:both;
+    height:relative;
+    padding: 5%;
+    border-radius: 25px;
+    text-align: center;
+    /* for div */
+    /* font-size:1.7rem;
+    font-family: 'Poor Story', system-ui;
+    color:#000;
+    margin-bottom:0;
+    margin-top:.5rem
+} */ 
+#calc-input{
+    font-size:1.5rem;
+    font-family: 'Poor Story', system-ui;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom:0;
+    margin-top:.5rem
+}
+#calc-input:hover{
+    opacity:.5;
+    cursor:default
+}
+#calc-table{
+    margin-left:auto;
+    margin-right:auto;
+    padding:2px;
+    font-family: 'Poor Story', system-ui;
+    font-size: 1.5rem;
+}
+
+#calc-table td:nth-child(odd){
+    text-align:right;
+}
+
+#calc-table td:nth-child(even){
+    text-align:left;
+    padding-left: 0.35em;
+}
+
+
+
+#magic-input{
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin: 8px 8px;
+    display: inline-block;
+    width: 74%;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+
+    font-family: 'Poor Story', system-ui;
+    color: #0d1b2a;
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    background-color: #FAEED1;
+    outline: none;
+    transition: .4s;
+    resize: none;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+/* #magic-input::-webkit-scrollbar-track{
+	background-color: #e2e2e2;
+}
+
+#magic-input::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+    scroll-behavior:smooth;
+}
+
+#magic-input::-webkit-scrollbar-thumb{
+	background-color: #FAEED1;
+} */
+
+
+/* ---------footer----------- */
+.footer{
+    margin:50px 50px;
+    border: #561C24;
+    
+    
+}
+.footer .footwrapper{
+    display:flex;
+    justify-content:space-around
+}
+
+.footer_nav{
+    font-family: 'Poor Story', system-ui;
+    padding-top:1.5em;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    
+
+}
